@@ -1,0 +1,198 @@
+body,
+html {
+    color: 000000;
+    height: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    /* background-color: #173B45; */
+    background-color: #17373E;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.points {
+    margin-top: 30px;
+    font-size: 50px;
+    flex: 0 1 auto;
+    color: #ccc;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.boardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 350px;
+    background-color: #251e1e;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.board {
+    transform: scale(0.7);
+    border: 7px ridge #a0a734;
+    background-color: #A8B03F; 
+    width: 500px;
+    height: 340px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 70px 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.boardbox{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 800px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: #A04747; 
+}
+
+.box {
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 5px 10px 0 black;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background: none no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    transition: box-shadow 0.3;
+}
+
+/* line 58, style.scss */
+.box:hover {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+/* line 62, style.scss */
+.box.cold {
+    background-image: url(cold.png);
+}
+
+/* line 65, style.scss */
+.box.ghost {
+    background-image: url(ghost.png);
+}
+
+/* line 68, style.scss */
+.box.tornado {
+    background-image: url(tornado.png);
+}
+
+/* line 71, style.scss */
+.box.emp {
+    background-image: url(emp.png);
+}
+
+/* line 74, style.scss */
+.box.alacrity {
+    background-image: url(alacrity.png);
+}
+
+/* line 77, style.scss */
+.box.blast {
+    background-image: url(blast.png);
+}
+
+/* line 80, style.scss */
+.box.meteor {
+    background-image: url(chos.png);
+}
+
+/* line 83, style.scss */
+.box.wall {
+    background-image: url(wall.png);
+}
+
+/* line 86, style.scss */
+.box.spirit {
+    background-image: url(spirt.png);
+}
+
+.box.sun {
+    background-image: url(sun.png);
+}
+
+.habilities {
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+/* line 97, style.scss */
+.habilities .normal {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* line 102, style.scss */
+.hability {
+    margin-top: 20px;
+    margin-right: 5px;
+    background: #fff;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 100px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background: none no-repeat center center rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 20px;
+    font-family: "Saira", sans-serif;
+}
+
+/* line 115, style.scss */
+.hability:hover {
+    opacity: 1 !important;
+}
+
+/* line 119, style.scss */
+.hability.Q {
+    background-image: url(q.png);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 255, 0.5);
+}
+
+/* line 123, style.scss */
+.hability.W {
+    background-image: url(w.png);
+    box-shadow: 0 0 10px 0 rgba(255, 0, 255, 0.5);
+}
+
+/* line 127, style.scss */
+.hability.E {
+    background-image: url(e.png);
+    box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.5);
+}
+
+/* line 131, style.scss */
+.hability.invoke {
+    opacity: 0.5;
+    background-image: url(r.png);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+}
+
